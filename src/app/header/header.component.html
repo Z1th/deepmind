@@ -10,7 +10,7 @@
                     <ul class="flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg gap-3 md:flex-row md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
                         <li>
                             <button id="mega-menu-about-dropdown-button" data-collapse-toggle="mega-menu-about-dropdown"
-                                class="flex items-center justify-between w-full px-2 py-3 rounded-md text-white hover:bg-gray-100 hover:bg-opacity-5"
+                                class="text-lg flex items-center justify-between w-full px-2 py-3 rounded-md text-white hover:bg-gray-100 hover:bg-opacity-5"
                                 aria-expanded="false">
                                 About
                                 <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
@@ -23,7 +23,7 @@
                         <li>
                             <button id="mega-menu-research-dropdown-button"
                                 data-collapse-toggle="mega-menu-research-dropdown"
-                                class="flex items-center justify-between w-full px-2 py-3 rounded-md text-white hover:bg-gray-100 hover:bg-opacity-5"
+                                class="text-lg flex items-center justify-between w-full px-2 py-3 rounded-md text-white hover:bg-gray-100 hover:bg-opacity-5"
                                 aria-expanded="false">
                                 Research
                                 <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
@@ -36,7 +36,7 @@
                         <li>
                             <button id="mega-menu-technologies-dropdown-button"
                                 data-collapse-toggle="mega-menu-technologies-dropdown"
-                                class="flex items-center justify-between w-full px-2 py-3 rounded-md text-white hover:bg-gray-100 hover:bg-opacity-5"
+                                class="text-lg flex items-center justify-between w-full px-2 py-3 rounded-md text-white hover:bg-gray-100 hover:bg-opacity-5"
                                 aria-expanded="false">
                                 Technologies
                                 <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
@@ -49,7 +49,7 @@
                         <li>
                             <button id="mega-menu-discover-dropdown-button"
                                 data-collapse-toggle="mega-menu-discover-dropdown"
-                                class="flex items-center justify-between w-full px-2 py-3 rounded-md text-white hover:bg-gray-100 hover:bg-opacity-5"
+                                class="text-lg flex items-center justify-between w-full px-2 py-3 rounded-md text-white hover:bg-gray-100 hover:bg-opacity-5"
                                 aria-expanded="false">
                                 Discover
                                 <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
@@ -92,55 +92,53 @@
         </div>
 
         <!-- MEGA MENUS-->
-        <div id="mega-menu-about-dropdown"
-            class="hidden mt-1 border-gray-200 shadow-sm bg-gray-50 md:bg-white border-y dark:bg-gray-800 dark:border-gray-600">
-            <div class="grid max-w-screen-xl px-4 py-5 mx-auto text-gray-900 dark:text-white sm:grid-cols-2 md:px-6">
-                <ul>
-                    <li>
-                        <a href="#" class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
-                            <div class="font-semibold">Online Stores</div>
-                            <span class="text-sm text-gray-500 dark:text-gray-400">Connect with third-party tools that
-                                you're already using.</span>
+        <div id="mega-menu-about-dropdown"class="hidden mt-1 border-gray-200 shadow-sm bg-gray-50 md:bg-white border-y dark:bg-gray-800 dark:border-gray-600">
+            <div class="container flex px-4 py-5 mx-auto text-gray-900 dark:text-white sm:grid-cols-2 md:px-6">
+                <div class="w-1/2 pt-10">
+                    <a href="#" class="text-blue-600 text-lg font-semibold flex items-center gap-2 p-4 hover:bg-gray-100 w-1/2">
+                        Learn about Google DeepMind
+                        <svg class="w-5 h-5 text-blue-600 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 5 7 7-7 7"/>
+                          </svg>
+                    </a>
+
+                     <div class="container flex flex-wrap">
+                        <div class="flex flex-col w-1/2">
+                            <a href="" class="w-full flex flex-col p-4 hover:bg-gray-100 my-2">
+                                <h3 class="text-gray-900 text-lg font-semibold"> Responsability & Safety</h3>
+                                <span>We want AI to benefit the world, so we must be thoughtful about how it's built</span>
+                            </a>
+                            <a href="" class="w-full flex flex-col p-4 hover:bg-gray-100 my-2">
+                                <h3 class="text-gray-900 text-lg font-semibold">Careers</h3>
+                                <span>Many disciplines, one common goal</span>
+                            </a>
+                        </div>
+    
+                        <div class="flex flex-col w-1/2">
+                            <a href="" class="w-full flex flex-col p-4 hover:bg-gray-100 my-2">
+                                <h3 class="text-gray-900 text-lg font-semibold">Careers</h3>
+                                <span>Many disciplines, one common goal</span>
+                            </a>
+                        </div>
+                     </div>
+                </div>
+                <div class="w-1/2 pt-10">
+                    <h4 class="font-semibold text-gray-500 p-4 text-sm">LATEST POSTS</h4>
+
+                    <div class="flex gap-6">
+                        <a href="" class="card w-2/5 p-3 rounded-xl hover:bg-gray-100">
+                            <img class="w-full h-36 object-cover rounded-xl" src="https://lh3.googleusercontent.com/7CWJ9fVeC97FrWgcispxyms9gTL_1PIDMIwBYTQNnU8S56JaxGB2Z4ThqZ-1vBTO-u-UBZg_cYhG8PtZjYP0rPabUbg5x2cCUnNJuiZAZBsE8u7Kvig=w264-h156-n-nu">
+                            <h3 class="my-4 font-semibold text-lg">New Generative AI tools open the doors of music creation</h3>
+                            <p class="text-xs font-medium text-gray-500">23 OCTOBER 2024</p>
                         </a>
-                    </li>
-                    <li>
-                        <a href="#" class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
-                            <div class="font-semibold">Segmentation</div>
-                            <span class="text-sm text-gray-500 dark:text-gray-400">Connect with third-party tools that
-                                you're already using.</span>
+
+                        <a href="" class="card w-2/5 p-3 rounded-xl hover:bg-gray-100">
+                            <img class="w-full h-36 object-cover rounded-xl" src="https://lh3.googleusercontent.com/7ZdZh5xhoD5NnykRBJHACxkxc3VubCdJLGHty2nYdJ36pBLVxRWO3Keu9C2Tum4OHCyGbJ5K5mB8R_oR94JG700qenuZ2rhq2sKjN4IkjIoU9Chv=w264-h156-n-nu">
+                            <h3 class="my-4 font-semibold text-lg">New Generative AI tools open the doors of music creation</h3>
+                            <p class="text-xs font-medium text-gray-500">23 OCTOBER 2024</p>
                         </a>
-                    </li>
-                    <li>
-                        <a href="#" class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
-                            <div class="font-semibold">Marketing CRM</div>
-                            <span class="text-sm text-gray-500 dark:text-gray-400">Connect with third-party tools that
-                                you're already using.</span>
-                        </a>
-                    </li>
-                </ul>
-                <ul>
-                    <li>
-                        <a href="#" class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
-                            <div class="font-semibold">Online Stores</div>
-                            <span class="text-sm text-gray-500 dark:text-gray-400">Connect with third-party tools that
-                                you're already using.</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
-                            <div class="font-semibold">Segmentation</div>
-                            <span class="text-sm text-gray-500 dark:text-gray-400">Connect with third-party tools that
-                                you're already using.</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
-                            <div class="font-semibold">Marketing CRM</div>
-                            <span class="text-sm text-gray-500 dark:text-gray-400">Connect with third-party tools that
-                                you're already using.</span>
-                        </a>
-                    </li>
-                </ul>
+                    </div>
+                </div>
             </div>
         </div>
 
